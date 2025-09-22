@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>C.A.P.S El Cardón - Gestión de Turnos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+</head>
+<body>
+<!-- Header -->
+  <header class="bg-white p-3 d-flex align-items-center justify-content-between">
+    <img src="logo-minsaludlr.png"Ministerio de Salud" height="40">
+    <div class="d-flex align-items-center">
+      <img src="logo-cardon 1.jpg" alt="Logo El Cardón" height="75" class="me-2">
+      <h1 class="h4 header-title">C.A.P.S. El Cardón</h1>
+    </div>
+  </header>
+
+
+ <!-- Navbar separado -->
+<nav class="navbar navbar-expand-lg custom-navbar navbar-dark">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav w-100">
+        <!-- Menú a la izquierda -->
+        <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="equipo.html">Profesionales</a></li>
+        <li class="nav-item"><a class="nav-link" href="talleres.html">Talleres</a></li>
+
+
+        <!-- Login alineado a la derecha -->
+        <li class="nav-item ms-auto">
+         <a class="nav-link" href="login.html">
+         <i class="bi bi-box-arrow-in-right me-1"></i> Login
+         </a>
+        </li>
+     
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- Formulario de turnos -->
+  <main class="container my-5">
+    <h1 class="text-center mb-4">Solicitar Turno</h1>
+    <form id="turnoForm" class="mx-auto" style="max-width:500px;">
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre completo</label>
+        <input type="text" class="form-control" id="nombre" required>
+      </div>
+      <div class="mb-3">
+        <label for="dni" class="form-label">DNI</label>
+        <input type="text" class="form-control" id="dni" required>
+      </div>
+      <div class="mb-3">
+        <label for="fecha" class="form-label">Fecha del turno</label>
+        <input type="date" class="form-control" id="fecha" required>
+      </div>
+      <div class="mb-3">
+        <label for="taller" class="form-label">Especialidad / Taller</label>
+        <input type="text" class="form-control" id="taller" readonly>
+      </div>
+      <button type="submit" class="btn btn-success w-100">Confirmar Turno</button>
+    </form>
+  </main>
+
+  <!-- Footer -->
+<footer class="bg-dark text-white py-4 mt-5">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- Columna izquierda: info del CAPS + redes sociales -->
+      <div class="col-md-6 mb-3 mb-md-0">
+        <p class="mb-1">&copy; 2025 CAPS EL CARDÓN</p>
+        <p class="mb-1">📍 Av. Ramirez de Velazco Norte s/n, La Rioja, Argentina</p>
+        <p class="mb-0">Tel: (0380) 030-3456 | Email: capselcardon@msplr.gob.ar</p>
+        
+        <!-- Redes sociales -->
+        <p class="mt-2 mb-1">Redes Sociales:</p>
+        <div>
+          <a href="#" class="text-white me-2 fs-4"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white me-2 fs-4"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-white me-2 fs-4"><i class="bi bi-twitter"></i></a>
+        </div>
+      </div>
+
+      <!-- Columna derecha: "Nuestra Ubicación" + mapa -->
+      <div class="col-md-6 text-center text-md-end">
+        <!-- Leyenda en negrita -->
+        <p class="mb-2 fw-bold">Nuestra Ubicación:</p>
+        <div style="width: 200px; height: 150px; margin-left:auto; margin-right:0;">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1550.538441456462!2d-66.84370559124066!3d-29.37533072559294!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses-419!2sar!4v1758429075682!5m2!1ses-419!2sar"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

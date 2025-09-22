@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, sans-serif; background-color:#cae4c5; /*hwb(120 76% 3%)*/
+}
+
+.header-title {
+    color:hsl(143, 56%, 29%); /* Cambia 'green' por el color que desees */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xxx-large;
+}
+
+.navbar {
+  min-height: 70px; /* Ajusta según necesites */
+}
+
+.custom-navbar {
+  background-color: hsl(143, 56%, 29%); /* El color hexadecimal que desees */
+}
+
+.navbar .nav-link {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: x-large;
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.border {
+    border: 5px solid #67b077; /* Color del borde */
+}
+
+.rounded {
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+.my-carousel {
+  width: 80%; /* Reduce el ancho del carrusel al 80% del contenedor padre */
+  max-width: 900px; /* Establece un ancho máximo para evitar que sea demasiado grande en pantallas amplias */
+  margin: auto; /* Centra el carrusel en la página */
+}
+
+/* Fija el header en la parte superior */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1040; /* Z-index más alto para que quede encima de todo */
+}
+
+/* Fija el navbar justo debajo del header */
+nav.navbar {
+  position: fixed;
+  top: 90px; /* Ajusta este valor al alto de tu header */
+  width: 100%;
+  z-index: 1030; /* Menor que el header para que quede debajo */
+}
+
+/* Agrega padding al body para evitar que el contenido quede oculto */
+body {
+  padding-top: 150px; /* Suma el alto del header y del navbar */
+}
