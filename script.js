@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+
   // ---------- Login simple ----------
   const loginForm = document.getElementById("loginForm");
   if (loginForm) {

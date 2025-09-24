@@ -8,12 +8,11 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
-
 </head>
 <body>
 <!-- Header -->
   <header class="bg-white p-3 d-flex align-items-center justify-content-between">
-    <img src="logo-minsaludlr.png"Ministerio de Salud" height="40">
+    <img src="logo-minsaludlr.png"Ministerio de Salud" height="50">
     <div class="d-flex align-items-center">
       <img src="logo-cardon 1.jpg" alt="Logo El Cardón" height="75" class="me-2">
       <h1 class="h4 header-title">C.A.P.S. El Cardón</h1>
@@ -31,7 +30,7 @@
       <ul class="navbar-nav w-100">
         <!-- Menú a la izquierda -->
         <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
-        <li class="nav-item"><a class="nav-link" href="equipo.html">Profesionales</a></li>
+        <li class="nav-item"><a class="nav-link" href="equipo.html">Nuestro Equipo</a></li>
         <li class="nav-item"><a class="nav-link" href="talleres.html">Talleres</a></li>
 
 
@@ -60,6 +59,14 @@
         <input type="text" class="form-control" id="dni" required>
       </div>
       <div class="mb-3">
+        <label for="telefono" class="form-label">Teléfono</label>
+        <input type="text" class="form-control" id="teléfono" required>
+      </div>
+      <div class="mb-3">
+        <label for="e-mail" class="form-label">E-mail</label>
+        <input type="text" class="form-control" id="e-mail" required>
+      </div>
+      <div class="mb-3">
         <label for="fecha" class="form-label">Fecha del turno</label>
         <input type="date" class="form-control" id="fecha" required>
       </div>
@@ -79,6 +86,8 @@
       <!-- Columna izquierda: info del CAPS + redes sociales -->
       <div class="col-md-6 mb-3 mb-md-0">
         <p class="mb-1">&copy; 2025 CAPS EL CARDÓN</p>
+        <hr>
+        <p class="mb-1">HORARIO DE ATENCIÓN: <br> Lunes a Sábados de 07:00 a 19:00 h </p>
         <p class="mb-1">📍 Av. Ramirez de Velazco Norte s/n, La Rioja, Argentina</p>
         <p class="mb-0">Tel: (0380) 030-3456 | Email: capselcardon@msplr.gob.ar</p>
         
@@ -108,5 +117,6 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
+
 </body>
 </html>

@@ -69,3 +69,12 @@ nav.navbar {
 body {
   padding-top: 150px; /* Suma el alto del header y del navbar */
 }
+
+.card-img-top{
+  min-height: 450px; /* Ajusta la altura mínima de la imagen */
+  object-fit: contain /* Mantiene la proporción de la imagen */
+}
+
+.text-success { text-align: justify;}
+
+.text-muted { font-size: small;}
